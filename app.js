@@ -16,8 +16,9 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.set('views', 'src/views');
 app.set("view engine","twig");
-app.use(express.static('views'));
+app.use(express.static('src'));
 
 app.get('/', routeIndex);
 app.use('/products', routeProducts);

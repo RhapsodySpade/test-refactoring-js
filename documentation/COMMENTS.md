@@ -5,3 +5,5 @@
 ###doc folder
 
 ###images in assets folder
+
+##views in view folder
