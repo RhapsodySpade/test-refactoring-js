@@ -6,4 +6,6 @@
 
 ###images in assets folder
 
-##views in view folder
+###views in view folder
+
+###add alt text
