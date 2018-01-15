@@ -10,21 +10,12 @@
 <body>
     <header class="bg-dark" role="header">
         <div class="container">
-            <h1 class="text-center text-light">{{ product.name }}</h1>
+             <h1 class="text-center text-light"><a href="http://www.chanel.com" >CHANEL</a></h1>
         </div>
     </header>
     <section class="container" role="application">
-        <div class="row">
-            <div class="col-4">
-                <figure>
-                    <img class="card-img-top" src="/assets/{{ product.image }}" alt="{{ product.name }}" />
-                </figure>
-            </div>
-            <div class="col-8">
-                <p>{{ product.description }}</p>
-                <p>Stock level: {{ product.stock }}</p>
-                <a class="btn btn-primary" href="/products/cart/{{ product.id }}">Buy</a>
-            </div>
+        <div>
+            <a href="/products/list">Product List</a>
         </div>
     </section>
     <div class="text-center" role="footer">
