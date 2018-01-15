@@ -1,17 +1,18 @@
-###const
+###ES6
 
-###fat arrows
+Using const over let and var is better practice when the variable never needs to be re-assigned.
+Using fat arrow fonctions allows to keep a more concise syntax as well as keeping the context without having to bind it.
 
-###doc folder
+###Folder Architecture
 
-###images in assets folder
+Separating each type of file into corresponding folder allows for a easier code to read
 
-###views in view folder
+###Accessibility
 
-###add alt text
+alt text and role attribute makes for easier navigation for users with sight issues.
 
-###remove blur on focus
+Links need to be able to be focused with a keyboard 
 
-###added landing page
+###Navigation
 
-###remove figcaption (redondant info)
+The home page should be accessible from everywhere
