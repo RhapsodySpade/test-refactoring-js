@@ -8,9 +8,9 @@ import http         from 'http'
 import routeProducts       from './routes/products';
 import {routeIndex}       from './routes/index';
 
-var app = express();
+const app = express();
 const server = http.createServer(app);
-let port = process.env.PORT || 3001;
+const port = process.env.PORT || 3001;
 
 app.use(logger('dev'));
 app.use(bodyParser.json());

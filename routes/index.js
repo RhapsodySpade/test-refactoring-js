@@ -1,5 +1,5 @@
 'use strict';
 
-export function routeIndex(req, res){
-    res.render('main');
+export const routeIndex = (req, res) => {
+    res.render('list');
 }
