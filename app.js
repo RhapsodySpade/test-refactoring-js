@@ -6,7 +6,7 @@ import bodyParser   from 'body-parser';
 import http         from 'http'
 
 import routeProducts       from './routes/products';
-import routeIndex       from './routes/index';
+import {routeIndex}       from './routes/index';
 
 var app = express();
 const server = http.createServer(app);
@@ -19,7 +19,7 @@ app.use(cookieParser());
 app.set("view engine","twig");
 app.use(express.static('views'));
 
-// app.get('/', routeIndex);
+app.get('/', routeIndex);
 app.use('/products', routeProducts);
 app.get('/products/list', function(req, res) {
     var sqlite3 = require('sqlite3').verbose();
